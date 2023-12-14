@@ -6,4 +6,8 @@ class PagesController < ApplicationController
   def founders
     render({ :template => "page_templates/founders.html.erb" })
   end
+
+  def contact
+    render({ :template => "page_templates/contact.html.erb" })
+  end
 end
