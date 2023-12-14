@@ -9,6 +9,10 @@ ports:
   - port: 9500-9999
     onOpen: ignore
 
+tasks:
+  - before: rvm install "3.1.3" && rvm use 3.1.3 --default
+    init: bundle install
+    command: rails server -b 0.0.0.0
 
 vscode:
   extensions:
